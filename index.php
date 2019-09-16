@@ -1,5 +1,7 @@
 <?php
 
+    include 'functions/main-functions.php';
+
     $pages = scandir('pages/');
  
     if (isset($_GET['page']) && !empty($_GET['page']) && in_array($_GET['page'].'.php', $pages))

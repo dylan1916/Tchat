@@ -20,43 +20,25 @@ $(document).ready(function() {
       }
     });
 
-    $('#regForm').submit(function(){
-      var name = $('#name').val();
+
+    $('#logForm').submit(function(){
       var email = $('#email').val();
       var password = $('#password').val();
 
       var result = true;
 
-      if (name == ""){
-          $('#name').parent().addClass('is-focused error');
-          result = false;
-      }
-
-      if (email == ""){
+      if (email == ''){
         $('#email').parent().addClass('is-focused error');
         result = false;
-    }
+      }
 
-    if (password == ""){
-      $('#password').parent().addClass('is-focused error');
-      result = false;
-  }
-
+      if (password == ""){
+        $('#password').parent().addClass('is-focused error');
+        result = false;
+      }
       return result;
-
     });
-    
-///////////////////////////
-    $('#name').keyup(function(){
-      if ($('#name').val() == ""){
-        $('#name').parent().addClass('is-focused error');
-      }
-      else
-      {
-        $('#name').parent().removeClass('error');
-      }
 
-    });
 
 
     $('#email').keyup(function(){
@@ -80,6 +62,6 @@ $(document).ready(function() {
       }
 
     });
-///////////////////////////
-  
-  });
+
+
+});

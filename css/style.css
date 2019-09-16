@@ -152,3 +152,7 @@ body{
  .header.header-form{
      margin-bottom: -8px;
  }
+ 
+ p.error{
+     color: #e74c3c;
+ }
