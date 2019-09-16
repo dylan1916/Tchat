@@ -13,4 +13,17 @@ try{
     die("Une erreur est survenue lors de la connexion à la base de données");
 }
 
+function isLogged()
+{
+    if (isset($_SESSION['tchat']))
+    {
+        $logged = 1;
+    }
+    else
+    {
+        $logged = 0;
+    }
+    return $logged;
+}
+
 ?>

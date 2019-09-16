@@ -1,3 +1,11 @@
+<?php
+
+    if (isLogged() == 1){
+        header('Location:index.php?page=membres');
+    }
+
+?>
+
 <h2 class="header">Se connecter</h2>
 
 <?php

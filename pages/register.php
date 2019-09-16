@@ -1,3 +1,12 @@
+<?php
+
+    if (isLogged() == 1){
+        header('Location:index.php?page=membres');
+    }
+
+?>
+
+
 <h2 class="header header-form">S'inscrire</h2>
 
 <?php
